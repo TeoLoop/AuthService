@@ -46,27 +46,21 @@ POST	/api/auth/login	Autenticación y generación de JWT	❌ Pública
 GET	/api/user/{username}	Obtener detalles del usuario	✅ Protegida
 
 🧪 Ejemplo de AuthRequest
-json
-Copiar
-Editar
+
 POST /api/auth/login
 {
   "username": "teo",
   "password": "123456"
 }
 Respuesta
-json
-Copiar
-Editar
+
 {
   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6..."
 }
+
 ⚙️ Configuración
 En application.properties:
 
-properties
-Copiar
-Editar
 spring.datasource.url=jdbc:mysql://localhost:3306/authdb
 spring.datasource.username=root
 spring.datasource.password=tu_password
@@ -74,11 +68,9 @@ spring.datasource.password=tu_password
 jwt.secret=secreto_super_seguro
 jwt.expiration=86400000
 🧠 Cómo correr el proyecto
-bash
-Copiar
-Editar
+
 # Clonar el proyecto
-git clone https://github.com/TU_USUARIO/auth-service.git
+git clone https://github.com/TeoLoop/AuthService.git
 
 # Ingresar al directorio
 cd auth-service
