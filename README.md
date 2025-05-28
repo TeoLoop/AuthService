@@ -41,9 +41,13 @@ src/
 
 🔐 Endpoints principales
 Método	Endpoint	Descripción	Protección
+
 POST	/api/auth/register	Registrar un nuevo usuario	❌ Pública
+
 POST	/api/auth/login	Autenticación y generación de JWT	❌ Pública
+
 GET	/api/user/{username}	Obtener detalles del usuario	✅ Protegida
+
 
 🧪 Ejemplo de AuthRequest
 
