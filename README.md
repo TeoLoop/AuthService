@@ -49,6 +49,8 @@ POST	/api/auth/login	Autenticación y generación de JWT	❌ Pública
 GET	/api/user/{username}	Obtener detalles del usuario	✅ Protegida
 
 
+
+
 🧪 Ejemplo de AuthRequest
 
 POST /api/auth/login
@@ -56,11 +58,16 @@ POST /api/auth/login
   "username": "teo",
   "password": "123456"
 }
+
+
 Respuesta
 
 {
   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6..."
 }
+
+
+
 
 ⚙️ Configuración
 En application.properties:
@@ -97,7 +104,13 @@ cd auth-service
 
  Roles más específicos (ADMIN, etc.)
 
+
+ 
+
 🧑‍💻 Autor
+
 Mateo López
+
 📧 matelopez2830@gmail.com
+
 🔗 [LinkedIn](https://www.linkedin.com/in/lopezmateo/)
