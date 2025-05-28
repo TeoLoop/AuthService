@@ -15,7 +15,7 @@ Este microservicio proporciona funcionalidades de autenticación y registro de u
 
 ## 🛠️ Tecnologías usadas
 
-- Java 17
+- Java 21
 - Spring Boot
 - Spring Security
 - Spring Data JPA
