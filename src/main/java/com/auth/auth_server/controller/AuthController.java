@@ -6,20 +6,17 @@ import com.auth.auth_server.dto.RegisterRequest;
 import com.auth.auth_server.exception.ApiError;
 import com.auth.auth_server.exception.EmailAlreadyUsedException;
 import com.auth.auth_server.exception.UsernameAlreadyUsedException;
-import com.auth.auth_server.model.UserDetailsImpl;
 import com.auth.auth_server.service.AuthenticationService;
 import com.auth.auth_server.service.JwtService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.BadCredentialsException;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/auth")
+@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:3000"})
 public class AuthController {
 
     @Autowired
